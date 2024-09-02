@@ -1,5 +1,5 @@
 # torch_Levenberg_Marquardt_optimizer
-Implementation of `trainlm` in Matlab that uses the Levenberg_Marquardt backpropagation for training neural networks. 
+Pytorch implementation of `trainlm` in Matlab that uses the Levenberg_Marquardt backpropagation for training neural networks. 
 
 It has the efficiency advantage over stochastic gradient descents but is restricted to smaller networks. The repository is built on [torchimize](https://github.com/hahnec/torchimize) which enables convex optimization on GPUs based on the torch.Tensor class.
 Make sure to `pip install torchimize` before running this code.
