@@ -148,7 +148,7 @@ print("finished!")
 print("how many updates", len(result))
 print("ground_truth",p)
 print("prediction",result[-1])
-# only when your result[-1] equals the ground_truth
+# only when your know the ground truth
 print("parameter error from the ground truth", torch.mean((result[-1].reshape(*p_ground_truth.shape)-p_ground_truth)**2))
 
 loss = opt_loss_function(result[-1], x, y, net)
